@@ -1,0 +1,22 @@
+﻿@model WebASPAppNFT.Entities.Option;
+
+<header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="@Model.Key" class="logo">
+                        <img src="@Model.Value" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    
+                    @await Component.InvokeAsync("NavBar")
+
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,16 @@
+﻿@using WebASPAppNFT.Entities
+
+
+<ul class="nav">
+    @foreach (var oneNavigate in Model as List<Navigate>)
+    {
+        @if(oneNavigate.Title == "Home")
+        {
+            <li><a href="@oneNavigate.Href" class="active">@oneNavigate.Title</a></li>
+        }
+        <li><a href="@oneNavigate.Href" >@oneNavigate.Title</a></li>
+    }
+</ul>
+<a class='menu-trigger'>
+    <span>Menu</span>
+</a>
