@@ -15,5 +15,10 @@ namespace WebASPAppNFT.Models
         {
             return _context.Navigates.OrderBy(n => n.Order).ToList();
         }
+
+        public ICollection<Navigate> GetNavigatesByRelation(string relation)
+        {
+            return _context.Navigates.Where(n => n.Relation == relation).OrderBy(n => n.Order).ToList();
+        }
     }
 }

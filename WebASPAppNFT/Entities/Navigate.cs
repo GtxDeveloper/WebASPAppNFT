@@ -7,11 +7,15 @@ namespace WebASPAppNFT.Entities
     {
         public int Id { get; set; }
 
+        public string Name { get; set; }
+
         public string Title { get; set; }
 
         public string Href { get; set; }
 
         public int Order { get; set; }
+
+        public string Relation {  get; set; }
 
         [DefaultValue(null)]
         [ForeignKey("Id")]

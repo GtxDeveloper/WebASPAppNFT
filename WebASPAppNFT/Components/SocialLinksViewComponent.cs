@@ -4,19 +4,20 @@ using WebASPAppNFT.Models;
 
 namespace WebASPAppNFT.Components
 {
-    public class NavBarViewComponent:ViewComponent
+    public class SocialLinksViewComponent : ViewComponent
     {
         private static NFTSiteDbContext _NFTSiteDbContext;
-        private static NavigationsModel _navigationsModel;
+        private static OptionsModel _optionsModel;
 
-        public NavBarViewComponent()
+        public SocialLinksViewComponent()
         {
             _NFTSiteDbContext = new NFTSiteDbContext(new DbContextOptions<NFTSiteDbContext>());
-            _navigationsModel = new NavigationsModel(_NFTSiteDbContext);
+            _optionsModel = new OptionsModel(_NFTSiteDbContext);
         }
+
         public IViewComponentResult Invoke()
         {
-            return View("NavBar", _navigationsModel.GetNavigatesByRelation("navBar"));
+            return View("SocialLinks", _optionsModel.GetOptionsByRelation("socialLink"));
         }
     }
 }
