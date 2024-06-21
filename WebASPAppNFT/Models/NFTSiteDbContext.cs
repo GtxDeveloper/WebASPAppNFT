@@ -117,13 +117,13 @@ namespace WebASPAppNFT.Models
 
             Navigate[] navigates = new Navigate[]
             {
-                new Navigate(){Id = 1, Name = "index", Href = "/", Order = 1, Parent_Id = null , Title = "Home", Relation = "navBar"},
-                new Navigate(){Id = 2, Name = "explore", Href = "/home/explore", Order = 2, Parent_Id = null, Title = "Explore", Relation = "navBar" },
-                new Navigate(){Id = 3, Name = "details", Href = "/home/details", Order = 3, Parent_Id = null, Title = "Item Details", Relation = "navBar"},
-                new Navigate(){Id = 4, Name = "author", Href = "/home/author", Order = 4, Parent_Id = null, Title = "Author", Relation = "navBar"},
-                new Navigate(){Id = 5, Name = "create", Href = "/home/create", Order = 5, Parent_Id = null, Title = "Create Yours", Relation = "navBar"},
+                new Navigate(){Id = 1, Name = "home", Href = "/", Order = 1, Parent_Id = null , Title = "Home", Relation = "navBar"},
+                new Navigate(){Id = 2, Name = "explore", Href = "/explore", Order = 2, Parent_Id = null, Title = "Explore", Relation = "navBar" },
+                new Navigate(){Id = 3, Name = "details", Href = "/details", Order = 3, Parent_Id = null, Title = "Item Details", Relation = "navBar"},
+                new Navigate(){Id = 4, Name = "author", Href = "/author", Order = 4, Parent_Id = null, Title = "Author", Relation = "navBar"},
+                new Navigate(){Id = 5, Name = "create", Href = "/create", Order = 5, Parent_Id = null, Title = "Create Yours", Relation = "navBar"},
                 new Navigate(){Id = 6, Name = "watch_videos", Href = "https://www.youtube.com/watch?v=Y9Zw6xOGly0&t=10s&ab_channel=NEFOS", Order = 2, Title = "Watch Our Videos", Relation = "headerButton"},
-                new Navigate(){Id = 7, Name = "explore", Href = "/home/explore", Order = 1, Parent_Id = null, Title = "Explore Top NFTs", Relation = "headerButton"}
+                new Navigate(){Id = 7, Name = "explore", Href = "/explore", Order = 1, Parent_Id = null, Title = "Explore Top NFTs", Relation = "headerButton"}
             };
 
             Category[] categories = new Category[]

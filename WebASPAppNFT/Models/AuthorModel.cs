@@ -18,7 +18,7 @@ namespace WebASPAppNFT.Models
 
         public Author GetAuthorById(int id) 
         {
-            return _context.Authors.SingleOrDefault(a = a => a.Id == id);
+            return _context.Authors.SingleOrDefault(a => a.Id == id);
         }
     }
 }

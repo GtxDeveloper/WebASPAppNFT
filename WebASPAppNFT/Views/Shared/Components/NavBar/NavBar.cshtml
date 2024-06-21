@@ -5,7 +5,7 @@
     @foreach (var oneNavigate in Model as List<Navigate>)
     {
         
-        <li><a class="@(Context.Request.Path == $"{oneNavigate.Href}"? "active":"")" asp-controller="Home" asp-action="@oneNavigate.Name">@oneNavigate.Title</a></li>
+        <li><a class="@(Context.Request.Path == $"{oneNavigate.Href}"? "active":"")" asp-controller="@oneNavigate.Name" asp-action="Index">@oneNavigate.Title</a></li>
     }
 </ul>
 <a class='menu-trigger'>

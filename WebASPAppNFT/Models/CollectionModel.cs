@@ -12,7 +12,7 @@ namespace WebASPAppNFT.Models
             _categoryModel = new CategoryModel(context);
         }
 
-        public IEnumerable<Collection> GetCollections()
+        public ICollection<Collection> GetCollections()
         {
             var collections = _context.Collections.ToList();
 

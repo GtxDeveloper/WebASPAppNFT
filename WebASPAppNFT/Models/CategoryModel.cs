@@ -11,7 +11,7 @@ namespace WebASPAppNFT.Models
             _context = context;
         }
 
-        public IEnumerable<Category> GetCategories()
+        public ICollection<Category> GetCategories()
         {
             return _context.Categories.ToList();
         }
