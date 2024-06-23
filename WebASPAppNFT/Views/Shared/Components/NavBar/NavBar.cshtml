@@ -4,11 +4,8 @@
 <ul class="nav">
     @foreach (var oneNavigate in Model as List<Navigate>)
     {
-        @if(oneNavigate.Title == "Home")
-        {
-            <li><a href="@oneNavigate.Href" class="active">@oneNavigate.Title</a></li>
-        }
-        <li><a href="@oneNavigate.Href" >@oneNavigate.Title</a></li>
+        
+        <li><a class="@(Context.Request.Path == $"{oneNavigate.Href}"? "active":"")" href="@oneNavigate.Href">@oneNavigate.Title</a></li>
     }
 </ul>
 <a class='menu-trigger'>

@@ -1,0 +1,18 @@
+﻿@using WebASPAppNFT.Entities;
+
+
+<div class="social-links">
+    <ul class="social-links-list">
+        @foreach (Option option in Model as List<Option>)
+        {
+            <li class="one-link">
+                <a href="@option.Key">
+                    <img src="@option.Value" alt="">
+                </a>
+
+            </li>
+        }
+    </ul>
+
+</div>
+

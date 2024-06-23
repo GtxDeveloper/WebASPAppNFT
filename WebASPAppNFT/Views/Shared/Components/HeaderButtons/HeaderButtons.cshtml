@@ -1,0 +1,11 @@
+﻿@using WebASPAppNFT.Entities;
+@model List<Navigate>
+
+<div class="buttons">
+    <div class="border-button">
+        <a asp-controller="Home" asp-action="@Model[0].Name">@Model[0].Title</a>
+    </div>
+    <div class="main-button">
+        <a href="@Model[1].Href" target="_blank">@Model[1].Title</a>
+    </div>
+</div>

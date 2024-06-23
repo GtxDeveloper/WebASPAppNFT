@@ -1,0 +1,12 @@
+﻿@using WebASPAppNFT.Entities;
+
+
+
+<div class="owl-banner owl-carousel">
+    @foreach (Option option in Model as List<Option>)
+    {
+        <div class="item">
+            <img src="@option.Value" alt="">
+        </div>
+    }
+</div>
